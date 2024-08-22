@@ -1,0 +1,39 @@
+@media (max-width: 1280px) {
+    body {
+        padding: 0 40px;
+    }
+}
+
+@media (max-width: 768px) {
+    .info.a {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .imageshowskill.z {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.info .desc {
+    width: 60%;
+    text-align: center;
+}
+
+@media (max-width: 425px) {
+    body {
+        padding: 40px;
+    }
+
+    .info .desc {
+        width: 100%;
+    }
+
+    .content {
+        min-height: 70vh;
+        gap: 50px;
+    }
+}

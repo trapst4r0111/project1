@@ -1,0 +1,119 @@
+body {
+    font-family: 'Poppins';
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.caroussel {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100;
+    z-index: -1;
+}
+
+.info {
+    display: none;
+}
+
+.info.a {
+    display: block;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    min-height: 100vh;
+}
+
+.info h1 {
+    font-size: 50px;
+    color: #ffffff;
+    margin-bottom: 50px;
+    font-family: "Cinzel";
+    letter-spacing: 8px;
+}
+
+.info .desc {
+    font-size: 24px;
+    width: 49%;
+    color: #ffffff;
+    height: 300px;
+    overflow: auto;
+    padding-right: 15px;
+}
+
+.caroussel-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.caroussel-buttons .button {
+    width: 15px;
+    height: 15px;
+    margin: 0px;
+    border-radius: 50%;
+    border: 2px solid transparent;
+    cursor: pointer;
+}
+
+.caroussel-buttons .selected.button {
+    background-color: blue;
+    border-color: #ffffff;
+}
+
+.image {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    display: none;
+}
+
+.image.y {
+    display: block;
+    animation: changeImg 1s;
+}
+
+@keyframes changeImg {
+    from {
+        opacity: 0.75;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+main:after {
+    content: "";
+    min-height: 100vh;
+    width: 100vw;
+    background-color: blue;
+    position: fixed;
+    top: 0;
+    background: linear-gradient(120deg, rgba(0, 0, 0, 1) 10%, rgba(0, 0, 0, 0.18926120448179273) 70%, rgba(0, 0, 0, 1)95%);
+    left: 0;
+    z-index: -1;
+}
+
+.skillbuttoncar{
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.skillbuttoncar .imageshowskill{
+    width: 20vw;
+    height: 13vh;
+}
+
+.imageshowskill{
+    display: none;
+}
+
+.imageshowskill.z{
+    object-fit: cover;
+    display: block;
+}
