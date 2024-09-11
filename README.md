@@ -8,6 +8,7 @@ README Test for this project 🎮
 <li>HTML</li>
 <li>CSS</li>
 <li>JavaScript</li>
+</ul>
 
 ## About it
 
